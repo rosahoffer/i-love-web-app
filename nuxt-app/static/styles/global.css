@@ -1,0 +1,54 @@
+/* --GLOBAL-- */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+}
+
+:root {
+    /* COLORS */
+    --primary-color: #F0EDF3;
+    --secondary-color: #AE8FD4;
+    --tertiary-color: #EACFFF;
+    --font-color: #5B5368;
+
+    /* BORDER RADIUS */
+
+    --border-radius: 20px;
+
+    /* BOX SHADOW */
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  } 
+
+/* HEADINGS */
+
+h1{
+    font-size: 3.75rem;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: -2px;
+    color: var(--font-color);
+}
+
+h2{
+    font-size: 3.75rem;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: -2px;
+    color: var(--font-color);
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+.sub-title{
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--font-color);
+}
