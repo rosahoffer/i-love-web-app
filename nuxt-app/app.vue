@@ -37,5 +37,5 @@ import MainNav from '/src/components/MainNav.vue';
           <img src="@/static/images/design-system.jpg" alt="Image Design System">
     </nuxt-link>
   </main>
-
 </template>
+
