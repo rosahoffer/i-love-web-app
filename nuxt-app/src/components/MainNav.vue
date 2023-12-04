@@ -58,7 +58,6 @@
   z-index: 1;
   width: 24px;
   height: 20px;
-  /* background-color: var(--font-color); */
 }
 
 .line {

@@ -30,11 +30,11 @@ import MainNav from '/src/components/MainNav.vue';
     <MainNav />
     <div>
       <h1 v-for="homepage in homepages" :key="homepage.id">{{ homepage.titleHomepage }}</h1>
-      <span>fdnd</span>
+      <span class="sub-title">fdnd</span>
     </div>  
-    <img src="@/static/images/separator-purple.svg" alt="Separator Purple">
+    <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
     <nuxt-link to="/">
-          <img src="@/static/images/iloveweb-logo.svg" alt="Logo I Love Web">
+          <img src="@/static/images/design-system.jpg" alt="Image Design System">
     </nuxt-link>
   </main>
 
