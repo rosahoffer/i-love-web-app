@@ -8,4 +8,9 @@ export default({
   css: [
     "@/static/styles/global.css"
   ],
-})
+
+  app: {
+    pageTransition: {name: 'fade', mode: 'out-in'}
+  },
+  
+  })

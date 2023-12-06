@@ -14,8 +14,8 @@
                 <span class="sub-title">fdnd</span>
               </div>
                 <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
-                <li><nuxt-link to="/AllPosts">all posts</nuxt-link></li>
-                <li><nuxt-link to="/">talk to me</nuxt-link></li>
+                <li><NuxtLink to="/AllPosts">all posts</NuxtLink></li>
+                <li><NuxtLink to="/">talk to me</NuxtLink></li>
                 <p>© All Rights Reserved</p>
             </ul>
         </div>
