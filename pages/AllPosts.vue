@@ -1,6 +1,7 @@
 <template>
     <main>
-        <h2>All Posts</h2>
-        <span class="sub-title">fdnd</span>
+        <div class="heading-title-contain">
+            <h2>All Posts<span class="sub-title">fdnd</span></h2>
+        </div>
     </main>
 </template>

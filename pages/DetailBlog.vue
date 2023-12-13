@@ -35,13 +35,14 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
 <template>
     <main>
         <section v-if="blogs && blogs.length > 0">
-            <h2>{{ blogs[0].title }}</h2>
-            <span class="sub-title">fdnd</span>
+            <div class="heading-title-contain">
+                <h2>{{ blogs[0].title }}<span class="sub-title">fdnd</span></h2>
+            </div>
             <div>
                 <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
             </div>
             <p class="blog-date">{{ blogs[0].date }}</p>
-            <p>{{ blogs[0].introduction }}</p>
+            <p class="blog-introduction">{{ blogs[0].introduction }}</p>
             <p>{{ blogs[0].description.text }}</p>
         </section>
     </main>

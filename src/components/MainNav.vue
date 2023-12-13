@@ -15,7 +15,7 @@
               </div>
                 <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
                 <li><NuxtLink to="/AllPosts">all posts</NuxtLink></li>
-                <li><NuxtLink to="/DetailBlog">talk to me</NuxtLink></li>
+                <li><NuxtLink to="/">talk to me</NuxtLink></li>
                 <p>© All Rights Reserved</p>
             </ul>
         </div>

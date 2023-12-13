@@ -34,19 +34,21 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
 
 <template>
   <main>
+    <div class="heading-title-contain">
+      <h1>Best Of This Week<span class="sub-title">fdnd</span></h1>
+    </div> 
     <div>
-      <h1>Best Of This Week</h1>
-      <span class="sub-title">fdnd</span>
-    </div>  
-    <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
-
-    <div v-if="blogs && blogs.length > 0">
-      <NuxtLink to="/DetailBlog">
-        <img v-if="blogs[0].thumbnail" :src="blogs[0].thumbnail.url" alt="Image Design System">
-      </NuxtLink>  
+      <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
+    </div> 
+    <article class="blog-post" v-if="blogs && blogs.length > 0">
+      <div class="image-container">
+        <NuxtLink to="/DetailBlog">
+          <img v-if="blogs[0].thumbnail" :src="blogs[0].thumbnail.url" alt="Image Design System">
+        </NuxtLink>  
+      </div>
         <h3>{{ blogs[0].title }}</h3>
         <p class="blog-date">{{ blogs[0].date }}</p>
-    </div>
+    </article>
     <NuxtLink to="/AllPosts">see all posts</NuxtLink>
     <div>
       <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
@@ -54,4 +56,3 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
     <NuxtLink to="/CreateBlog">create a new blog</NuxtLink>
   </main>
 </template>
-

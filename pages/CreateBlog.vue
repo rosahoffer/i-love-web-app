@@ -1,8 +1,7 @@
 <template>
     <main>
-        <div>
-            <h2>Create A New Blog</h2>
-            <span class="sub-title">fdnd</span>
+        <div class="heading-title-contain">
+            <h2>Create A New Blog<span class="sub-title">fdnd</span></h2>
         </div>  
     <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
         <form>
