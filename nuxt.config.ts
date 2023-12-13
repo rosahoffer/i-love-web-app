@@ -10,7 +10,7 @@ export default({
   ],
 
   app: {
-    pageTransition: {name: 'fade', mode: 'out-in'}
+    pageTransition: {name: 'fade', mode: 'ease-in'}
   },
   
   })
