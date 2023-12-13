@@ -33,25 +33,16 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
 </script>
 
 <template>
-  <main>
-    <div>
-      <h1>Best Of This Week</h1>
-      <span class="sub-title">fdnd</span>
-    </div>  
-    <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
-
-    <div v-if="blogs && blogs.length > 0">
-      <NuxtLink to="/DetailBlog">
-        <img v-if="blogs[0].thumbnail" :src="blogs[0].thumbnail.url" alt="Image Design System">
-      </NuxtLink>  
-        <h3>{{ blogs[0].title }}</h3>
-        <p class="blog-date">{{ blogs[0].date }}</p>
-    </div>
-    <NuxtLink to="/AllPosts">see all posts</NuxtLink>
-    <div>
-      <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
-    </div>
-    <NuxtLink to="/CreateBlog">create a new blog</NuxtLink>
-  </main>
+    <main>
+        <section v-if="blogs && blogs.length > 0">
+            <h2>{{ blogs[0].title }}</h2>
+            <span class="sub-title">fdnd</span>
+            <div>
+                <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
+            </div>
+            <p class="blog-date">{{ blogs[0].date }}</p>
+            <p>{{ blogs[0].introduction }}</p>
+            <p>{{ blogs[0].description.text }}</p>
+        </section>
+    </main>
 </template>
-
