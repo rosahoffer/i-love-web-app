@@ -1,5 +1,5 @@
 <script setup>
-    import MainNav from '../src/components/MainNav.vue';
+    import MainNav from '../components/MainNav.vue';
 </script>
 
 <template>

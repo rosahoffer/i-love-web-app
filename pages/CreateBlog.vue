@@ -3,7 +3,9 @@
         <div class="heading-title-contain">
             <h2>Create A New Blog<span class="sub-title">fdnd</span></h2>
         </div>  
-    <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
+        <div>
+            <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
+        </div>
         <form>
             <label for="title">Title</label>
             <input type="text" id="title" placeholder="Place your title here..." />

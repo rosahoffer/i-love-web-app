@@ -12,16 +12,20 @@
 
 :root {
     /* COLORS */
+
     --primary-color: #F0EDF3;
     --secondary-color: #AE8FD4;
     --tertiary-color: #EACFFF;
     --font-color: #5B5368;
 
     /* BORDER RADIUS */
+
     --border-radius: 20px;
 
     /* BOX SHADOW */
+
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
   } 
 
 /* HEADINGS */
@@ -33,6 +37,7 @@ h1{
     letter-spacing: -2px;
     color: var(--font-color);
     line-height: 3.75rem;
+    text-transform: capitalize;
 }
 
 h2{
@@ -42,6 +47,7 @@ h2{
     letter-spacing: -2px;
     color: var(--font-color);
     line-height: 3.75rem;
+    text-transform: capitalize;
 }
 
 h3{
@@ -72,6 +78,7 @@ p{
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--font-color);
+    margin-top: 1rem;
 }
 
 .blog-introduction{
@@ -81,16 +88,103 @@ p{
     line-height: 2.3rem;
 }
 
+/* BUTTONS */
+
+.primary-button{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    border: solid 2px var(--font-color);
+    border-radius: 25px;
+    padding: 0.6rem 0.5rem;
+    max-width: 13rem;
+}    
+
+.secondary-button{
+    background-color: var(--tertiary-color);
+    color: var(--font-color);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    border: solid 2px var(--font-color);
+    border-radius: 25px;
+    padding: 0.6rem 0.5rem;
+    max-width: 13rem;
+}  
+
+.tertiary-button{
+    background-color: var(--font-color);
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    border: solid 2px var(--font-color);
+    border-radius: 25px;
+    padding: 0.6rem 0.5rem;
+    max-width: 13rem;
+}
+
+.primary-button:hover{
+    text-decoration-line: underline;
+}
+
+.secondary-button:hover{
+    text-decoration-line: underline;
+}
+
+.tertiary-button:hover{
+    text-decoration-line: underline;
+}
+
+/* CREATE BLOG BUTTON  */
+
+.create-blog-button{
+    position: relative;
+    background-color: var(--tertiary-color);
+    border: solid 3px var(--font-color);
+    border-radius: 20px;
+    width: 20rem;
+    height: 18rem;
+    margin-top: 3rem;
+}
+
+.create-blog-button a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    inset: 0;
+    background-color: var(--tertiary-color);
+    border: dashed 4px var(--font-color);
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 3.4rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+    letter-spacing: -2px;
+    border-radius: 15px;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.create-blog-button img{
+    position: absolute;
+    background-color: var(--tertiary-color);
+    top: 60%;
+    left: 65%;
+}
+
 /* BASE LAYOUT */
 
 main{
     padding: 2.5rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
 }
 
 .heading-title-contain{
-    max-width: 15rem;
     margin-bottom: 1rem;
 }
 
@@ -102,8 +196,8 @@ main{
 }
 
 .image-container{
-    max-width: 20rem;
-    max-height: 20rem;
+    width: 20rem;
+    height: 20rem;
     overflow: hidden;
     border-radius: var(--border-radius);
     border: solid 2px var(--font-color);

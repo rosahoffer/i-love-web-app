@@ -21,7 +21,7 @@
                     url
                   }
                   description {
-                    text
+                    html
                   }
                 }
               }`
@@ -42,17 +42,27 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
     </div> 
     <article class="blog-post" v-if="blogs && blogs.length > 0">
       <div class="image-container">
-        <NuxtLink to="/DetailBlog">
+        <NuxtLink :to="`${blogs[0].slug}`">
           <img v-if="blogs[0].thumbnail" :src="blogs[0].thumbnail.url" alt="Image Design System">
         </NuxtLink>  
       </div>
         <h3>{{ blogs[0].title }}</h3>
-        <p class="blog-date">{{ blogs[0].date }}</p>
+        <li class="blog-date">{{ blogs[0].date }}</li>
     </article>
-    <NuxtLink to="/AllPosts">see all posts</NuxtLink>
+    <NuxtLink class="primary-button" to="/AllPosts">see all posts</NuxtLink>
     <div>
       <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
     </div>
-    <NuxtLink to="/CreateBlog">create a new blog</NuxtLink>
+    <div class="create-blog-button">
+      <NuxtLink to="/CreateBlog">create a new blog
+        <img src="@/static/images/add-button.svg" alt="add button image">
+      </NuxtLink>
+    </div>
   </main>
 </template>
+
+<style scoped>
+.primary-button{
+  margin: 3rem 0rem;
+}
+</style>

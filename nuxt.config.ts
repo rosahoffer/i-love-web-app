@@ -1,6 +1,7 @@
-import { resolve } from 'path'
+import { resolve } from 'path';
+import { NuxtConfig } from 'nuxt';
 
-export default({
+const config: NuxtConfig = {
   devtools: { enabled: true },
   alias: {
     '@': resolve(__dirname, "/"),
@@ -10,7 +11,18 @@ export default({
   ],
 
   app: {
-    pageTransition: {name: 'fade', mode: 'ease-in'}
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
-  
-  })
+
+  build: {
+    transpile: ['vue-awesome']
+  },
+
+  typescript: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag.startsWith('nuxt-')
+    }
+  }
+};
+
+export default config;
