@@ -9,8 +9,16 @@ export default {
     "@/static/styles/global.css"
   ],
 
+  vite: {
+    build: {
+      ssr: true,
+      rollupOptions: {
+        external: ["../../static/styles/global.css?inline&used"],
+      },
+    },
+  },
+
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-
 };
