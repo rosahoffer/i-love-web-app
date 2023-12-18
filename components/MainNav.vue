@@ -13,14 +13,14 @@
                 <h2>Menu</h2>
                 <span class="sub-title">fdnd</span>
               </div>
-                <img class="purple-separator" src="@/assets/images/separator-purple.svg" alt="Separator Purple">
+                <img class="purple-separator" src="@/public/img/separator-purple.svg" alt="Separator Purple">
                 <li><NuxtLink to="/AllPosts">all posts</NuxtLink></li>
                 <li><NuxtLink to="/">talk to me</NuxtLink></li>
                 <p>© All Rights Reserved</p>
             </ul>
         </div>
         <nuxt-link to="/">
-          <img class="logo" src="@/assets/images/iloveweb-logo.svg" alt="Logo I Love Web">
+          <img class="logo" src="@/public/img/iloveweb-logo.svg" alt="Logo I Love Web">
         </nuxt-link>
     </nav>
   </header>

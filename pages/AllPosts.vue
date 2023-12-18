@@ -1,8 +1,4 @@
 <script setup>
-
-import '@/assets/styles/global.css'
-
-
 // Fetching data from hygraph. 
 const { data } = await useFetch('https://api-eu-west-2.hygraph.com/v2/clpceledoaa4y01unccm36p1r/master', {
     method: "POST",
@@ -43,7 +39,7 @@ console.log(blogs); // Controleer of blogs correct worden opgehaald
             <h2>All Posts<span class="sub-title">fdnd</span></h2>
         </div>
         <div>
-            <img class="purple-separator" src="@/assets/images/separator-purple.svg" alt="Separator Purple">
+            <img class="purple-separator" src="@/public/img/separator-purple.svg" alt="Separator Purple">
         </div>
         <div v-if="blogs && blogs.length > 0">
             <article class="blog-post" v-for="blog in blogs">
