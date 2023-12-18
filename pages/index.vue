@@ -38,7 +38,7 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
       <h1>Best Of This Week<span class="sub-title">fdnd</span></h1>
     </div> 
     <div>
-      <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
+      <img class="purple-separator" src="@/assets/images/separator-purple.svg" alt="Separator Purple">
     </div> 
     <article class="blog-post" v-if="blogs && blogs.length > 0">
       <div class="image-container">
@@ -51,11 +51,11 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
     </article>
     <NuxtLink class="primary-button" to="/AllPosts">see all posts</NuxtLink>
     <div>
-      <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
+      <img class="purple-separator" src="@/assets/images/separator-purple.svg" alt="Separator Purple">
     </div>
     <div class="create-blog-button">
       <NuxtLink to="/CreateBlog">create a new blog
-        <img src="@/static/images/add-button.svg" alt="add button image">
+        <img src="@/assets/images/add-button.svg" alt="add button image">
       </NuxtLink>
     </div>
   </main>

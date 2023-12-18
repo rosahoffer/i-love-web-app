@@ -4,7 +4,7 @@
             <h2>Create A New Blog<span class="sub-title">fdnd</span></h2>
         </div>  
         <div>
-            <img class="purple-separator" src="@/static/images/separator-purple.svg" alt="Separator Purple">
+            <img class="purple-separator" src="@/assets/images/separator-purple.svg" alt="Separator Purple">
         </div>
         <form>
             <label for="title">Title</label>
