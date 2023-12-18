@@ -27,7 +27,6 @@
 </template>
 
 <style scoped>
-
 .nav-container {
   display: block;
   position: relative;

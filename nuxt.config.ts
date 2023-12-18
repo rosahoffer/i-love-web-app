@@ -13,7 +13,8 @@ export default {
     build: {
       ssr: true,
       rollupOptions: {
-        external: ["../../static/styles/global.css?inline&used"],
+        // Verwijder de externe verwijzing naar het CSS-bestand
+        external: [],
       },
     },
   },

@@ -10,6 +10,5 @@
       <slot />
     </div>
   </template>
-  
 
   
