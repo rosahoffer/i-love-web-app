@@ -62,6 +62,7 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
 </template>
 
 <style scoped>
+
 .primary-button{
   margin: 3rem 0rem;
 }

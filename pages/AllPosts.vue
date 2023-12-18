@@ -1,5 +1,8 @@
 <script setup>
 
+import '@/assets/styles/global.css'
+
+
 // Fetching data from hygraph. 
 const { data } = await useFetch('https://api-eu-west-2.hygraph.com/v2/clpceledoaa4y01unccm36p1r/master', {
     method: "POST",

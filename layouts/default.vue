@@ -1,5 +1,4 @@
 <script setup>
-  import { ref } from 'vue';
   import MainNav from '../components/MainNav.vue';
 </script>
 
@@ -10,5 +9,7 @@
       <slot />
     </div>
   </template>
+
+
 
   

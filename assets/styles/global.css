@@ -1,7 +1,5 @@
-/* --GLOBAL-- */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+/* --GLOBAL-- */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -9,7 +7,6 @@
     font-family: 'Poppins', sans-serif;
     background-color: var(--primary-color);
 }
-
 :root {
     /* COLORS */
 
@@ -26,10 +23,8 @@
 
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-  } 
-
+  }
 /* HEADINGS */
-
 h1{
     font-size: 3.75rem;
     font-weight: 900;
@@ -39,7 +34,6 @@ h1{
     line-height: 3.75rem;
     text-transform: capitalize;
 }
-
 h2{
     font-size: 3.75rem;
     font-weight: 900;
@@ -49,7 +43,6 @@ h2{
     line-height: 3.75rem;
     text-transform: capitalize;
 }
-
 h3{
     font-size: 2.5rem;
     font-weight: 300;
@@ -57,14 +50,12 @@ h3{
     color: var(--font-color);
     line-height: 3.5rem;
 }
-
 p{
     font-size: 1.125rem;
     font-weight: 400;
     color: var(--font-color);
     line-height: 2.3rem;
 }
-
 .sub-title{
     font-size: 1.25rem;
     font-style: italic;
@@ -73,23 +64,19 @@ p{
     color: var(--font-color);
     padding-left: 0.5rem;
 }
-
 .blog-date{
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--font-color);
     margin-top: 1rem;
 }
-
 .blog-introduction{
     font-size: 1.125rem;
     font-weight: 700;
     color: var(--font-color);
     line-height: 2.3rem;
 }
-
 /* BUTTONS */
-
 .primary-button{
     background-color: var(--primary-color);
     color: var(--font-color);
@@ -100,8 +87,7 @@ p{
     border-radius: 25px;
     padding: 0.6rem 0.5rem;
     max-width: 13rem;
-}    
-
+}
 .secondary-button{
     background-color: var(--tertiary-color);
     color: var(--font-color);
@@ -112,8 +98,7 @@ p{
     border-radius: 25px;
     padding: 0.6rem 0.5rem;
     max-width: 13rem;
-}  
-
+}
 .tertiary-button{
     background-color: var(--font-color);
     color: var(--primary-color);
@@ -125,21 +110,16 @@ p{
     padding: 0.6rem 0.5rem;
     max-width: 13rem;
 }
-
 .primary-button:hover{
     text-decoration-line: underline;
 }
-
 .secondary-button:hover{
     text-decoration-line: underline;
 }
-
 .tertiary-button:hover{
     text-decoration-line: underline;
 }
-
 /* CREATE BLOG BUTTON  */
-
 .create-blog-button{
     position: relative;
     background-color: var(--tertiary-color);
@@ -149,7 +129,6 @@ p{
     height: 18rem;
     margin-top: 3rem;
 }
-
 .create-blog-button a{
     position: absolute;
     top: 50%;
@@ -167,34 +146,27 @@ p{
     margin: 1rem;
     padding: 2rem;
 }
-
 .create-blog-button img{
     position: absolute;
     background-color: var(--tertiary-color);
     top: 60%;
     left: 65%;
 }
-
 /* BASE LAYOUT */
-
 main{
     padding: 2.5rem;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
-
 .heading-title-contain{
     margin-bottom: 1rem;
 }
-
 /* LAYOUT BLOG POST */
-
 .blog-post{
     max-width: 20rem;
     margin-top: 2.5rem;
 }
-
 .image-container{
     width: 20rem;
     height: 20rem;
@@ -203,10 +175,10 @@ main{
     border: solid 2px var(--font-color);
     margin-bottom: 1rem;
 }
-
 .image-container img{
     width: 20rem;
     height: 20rem;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
