@@ -1,7 +1,6 @@
 import { resolve } from 'path';
-import { NuxtConfig } from 'nuxt';
 
-const config: NuxtConfig = {
+export default {
   devtools: { enabled: true },
   alias: {
     '@': resolve(__dirname, "/"),
@@ -14,15 +13,4 @@ const config: NuxtConfig = {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
 
-  build: {
-    transpile: ['vue-awesome']
-  },
-
-  typescript: {
-    compilerOptions: {
-      isCustomElement: (tag) => tag.startsWith('nuxt-')
-    }
-  }
 };
-
-export default config;
