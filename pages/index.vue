@@ -34,36 +34,115 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
 
 <template>
   <main>
-    <div class="heading-title-contain">
-      <h1>Best Of This Week<span class="sub-title">fdnd</span></h1>
-    </div> 
-    <div>
-      <img class="purple-separator" src="@/public/img/separator-purple.svg" alt="Separator Purple">
-    </div> 
-    <article class="blog-post" v-if="blogs && blogs.length > 0">
-      <div class="image-container">
-        <NuxtLink :to="`${blogs[0].slug}`">
-          <img v-if="blogs[0].thumbnail" :src="blogs[0].thumbnail.url" alt="Image Design System">
-        </NuxtLink>  
-      </div>
-        <h3>{{ blogs[0].title }}</h3>
-        <li class="blog-date">{{ blogs[0].date }}</li>
-    </article>
-    <NuxtLink class="primary-button" to="/AllPosts">see all posts</NuxtLink>
-    <div>
-      <img class="purple-separator" src="@/public/img/separator-purple.svg" alt="Separator Purple">
-    </div>
-    <div class="create-blog-button">
-      <NuxtLink to="/CreateBlog">create a new blog
-        <img src="@/public/img/add-button.svg" alt="add button image">
-      </NuxtLink>
-    </div>
+    <section class="grid-contain">
+      <div class="heading-title-contain">
+        <h1>Best Of This Week<span class="sub-title">fdnd</span></h1>
+        <img class="purple-separator" src="/img/separator-purple.svg" alt="Separator Purple">
+      </div> 
+        <article class="blog-post" v-if="blogs && blogs.length > 0">
+          <div class="image-container">
+            <NuxtLink :to="`${blogs[0].slug}`">
+              <img v-if="blogs[0].thumbnail" :src="blogs[0].thumbnail.url" alt="Image Design System">
+            </NuxtLink>  
+          </div>
+            <h3>{{ blogs[0].title }}</h3>
+            <li class="blog-date">{{ blogs[0].date }}</li>
+        </article>
+        <div class="button-all-posts-contain">
+          <NuxtLink class="primary-button" to="/AllPosts">see more posts</NuxtLink>
+        </div>
+        <div class="separator-contain">
+          <img class="purple-separator" src="/img/separator-purple.svg" alt="Separator Purple">
+        </div>
+        <div class="create-blog-button">
+          <NuxtLink to="/CreateBlog">create a new blog
+            <img src="/img/add-button.svg" alt="add button image">
+          </NuxtLink>
+        </div>
+    </section>
   </main>
 </template>
 
 <style scoped>
 
-.primary-button{
-  margin: 3rem 0rem;
+.blog-post{
+    margin-top: 2.5rem;
 }
+
+.button-all-posts-contain{
+  margin: 3rem 0rem;
+  max-width: 12rem
+}
+
+/* BREAKPOINTS */
+
+@media (min-width: 45rem) {
+  .grid-contain {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 0.5fr) 0.2fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+
+  .heading-title-contain { grid-area: 1 / 1 / 2 / 2; }
+  .blog-post { grid-area: 2 / 1 / 5 / 2; }
+  .button-all-posts-contain { grid-area: 4 / 2 / 5 / 3; }
+  .separator-contain { grid-area: 3 / 2 / 4 / 3; }
+  .create-blog-button { grid-area: 1 / 2 / 3 / 3; }
+
+  main{
+    height: 100vw;
+  }
+
+  .blog-post{
+      width: 100%;
+      margin-top: 0;
+  }
+
+  .image-container{
+    width: 100%;
+    height: 100%;
+    border: solid 3px var(--font-color);
+  }
+
+  .image-container img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .create-blog-button{
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .separator-contain{
+    margin-left: auto;
+  }
+
+  .separator-contain > .purple-separator{
+    width: 100%;
+  }
+
+  .button-all-posts-contain{
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    border: solid 10px var(--secondary-color);
+    border-radius: 20px;
+  }
+
+  .button-all-posts-contain > .primary-button{
+    border: none;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: -5px;
+    line-height: 5rem;
+    background-color: transparent;
+    padding: 0;
+  }
+
+}
+
 </style>

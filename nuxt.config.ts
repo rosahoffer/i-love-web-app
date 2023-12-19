@@ -7,6 +7,6 @@ export default {
   },
   
   css: [
-    '@/assets/css/global.css'
+    'assets/css/global.css'
   ]
 };

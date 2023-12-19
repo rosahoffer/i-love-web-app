@@ -13,20 +13,24 @@
                 <h2>Menu</h2>
                 <span class="sub-title">fdnd</span>
               </div>
-                <img class="purple-separator" src="@/public/img/separator-purple.svg" alt="Separator Purple">
+                <img class="purple-separator" src="/img/separator-purple.svg" alt="Separator Purple">
                 <li><NuxtLink to="/AllPosts">all posts</NuxtLink></li>
                 <li><NuxtLink to="/">talk to me</NuxtLink></li>
                 <p>© All Rights Reserved</p>
             </ul>
         </div>
         <nuxt-link to="/">
-          <img class="logo" src="@/public/img/iloveweb-logo.svg" alt="Logo I Love Web">
+          <img class="logo" src="/img/iloveweb-logo.svg" alt="Logo I Love Web">
         </nuxt-link>
     </nav>
   </header>
 </template>
 
 <style scoped>
+
+header{
+  background-color: var(--primary-color);
+}
 .nav-container {
   display: block;
   position: relative;
@@ -88,6 +92,7 @@
   transition: transform 0.5s ease-in-out;
   text-align: left;
   list-style-type: none;
+  background-color: var(--primary-color);
 }
 
 .menu-items div{
@@ -107,7 +112,6 @@ a{
   letter-spacing: -2px;
   color: var(--font-color);
   text-decoration: none;
-  margin-bottom: 1.2rem;
 }
 
 a:hover{
@@ -155,47 +159,47 @@ p{
 
 </style>
 
+<!-- @media (min-width:50rem){
 
-<!-- <style scoped>
+  header {
+    /* background-color: aquamarine; */
+    padding: 3rem;
+  }
 
-header{
-  padding: 3rem;
-}
+  img{
+    max-width: 7rem;
+    margin-right: 4rem;
+  }
 
-img{
-  max-width: 7rem;
-  margin-right: 4rem;
-}
+  nav{
+    display: flex;
+  }
 
-nav{
-  display: flex;
-}
+  .nav-links{
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    align-items: flex-end;
+    gap: 4rem;
+  }
 
-.nav-links{
-  display: flex;
-  gap: 3rem;
-  list-style-type: none;
-  align-items: flex-end;
-  gap: 4rem;
-}
+  a{
+    font-style: italic;
+    font-weight: 300;
+    color: var(--font-color);
+    text-decoration: none;
+  }
 
-a{
-  font-style: italic;
-  font-weight: 300;
-  color: var(--font-color);
-  text-decoration: none;
-}
+  a:hover{
+    font-style: italic;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
 
-a:hover{
-  font-style: italic;
-  font-weight: bold;
-  color: var(--secondary-color);
-}
+  a:active{
+    font-style: italic;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
 
-a:active{
-  font-style: italic;
-  font-weight: bold;
-  color: var(--secondary-color);
-}
-
-</style> -->
+} -->

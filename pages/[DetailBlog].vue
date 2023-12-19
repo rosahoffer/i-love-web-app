@@ -32,7 +32,7 @@ const blog = data.value.data.blog
       <h2>{{ blog.title }}<span class="sub-title">fdnd</span></h2>
     </div> 
     <div>
-      <img class="purple-separator" src="@/public/img/separator-purple.svg" alt="Separator Purple">
+      <img class="purple-separator" src="/img/separator-purple.svg" alt="Separator Purple">
     </div> 
       <li class="blog-date">{{ blog.date }}</li>
       <p class="blog-introduction">{{ blog.introduction }}</p>

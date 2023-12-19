@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--primary-color);
 }
 
 :root {
@@ -96,10 +95,11 @@ p{
     text-align: center;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1rem;
     border: solid 2px var(--font-color);
     border-radius: 25px;
     padding: 0.6rem 0.5rem;
-    max-width: 13rem;
+    min-width: 8rem;
 }    
 
 .secondary-button{
@@ -108,10 +108,11 @@ p{
     text-align: center;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1rem;
     border: solid 2px var(--font-color);
     border-radius: 25px;
     padding: 0.6rem 0.5rem;
-    max-width: 13rem;
+    min-width: 8rem;
 }  
 
 .tertiary-button{
@@ -120,10 +121,11 @@ p{
     text-align: center;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1rem;
     border: solid 2px var(--font-color);
     border-radius: 25px;
     padding: 0.6rem 0.5rem;
-    max-width: 13rem;
+    min-width: 8rem;
 }
 
 .primary-button:hover{
@@ -182,6 +184,7 @@ main{
     margin: auto;
     display: flex;
     flex-direction: column;
+    background-color: var(--primary-color);
 }
 
 .heading-title-contain{
@@ -189,11 +192,6 @@ main{
 }
 
 /* LAYOUT BLOG POST */
-
-.blog-post{
-    max-width: 20rem;
-    margin-top: 2.5rem;
-}
 
 .image-container{
     width: 20rem;
@@ -210,3 +208,16 @@ main{
     object-fit: cover;
 }
 
+/* BREAKPOINTS */
+
+@media (min-width:65rem){
+    main {
+        background-color: green;
+    }
+}
+
+@media (min-width:90rem){
+    main {
+        background-color: blue;
+    }
+}
