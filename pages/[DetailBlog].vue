@@ -20,22 +20,25 @@ const { data } = await useFetch('https://api-eu-west-2.hygraph.com/v2/clpceledoa
                   }
                 }
               }`
-    },
-  })
+  },
+})
 
 const blog = data.value.data.blog
 </script>
 
 <template>
-  <main>
-    <div class="heading-title-contain">
-      <h2>{{ blog.title }}<span class="sub-title">fdnd</span></h2>
-    </div> 
+  <main class="contain-detail-page">
     <div>
+      <h2>{{ blog.title }}<span class="sub-title">fdnd</span></h2>
+    </div>
+    <div class="separator">
       <img class="purple-separator" src="/img/separator-purple.svg" alt="Separator Purple">
-    </div> 
-      <li class="blog-date">{{ blog.date }}</li>
+    </div>
+    <li class="blog-date">{{ blog.date }}</li>
+    <div class="blog-text">
       <p class="blog-introduction">{{ blog.introduction }}</p>
-      <div v-html="blog.description.html"></div> 
+      <div v-html="blog.description.html"></div>
+    </div>
+    <NuxtLink class="primary-button" to="/">back to overview</NuxtLink>
   </main>
 </template>

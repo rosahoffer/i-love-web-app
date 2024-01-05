@@ -7,17 +7,25 @@
         <img class="purple-separator" src="/img/separator-purple.svg" alt="Separator Purple">
       </div>
       <form>
-        <label for="title">Title</label>
-        <input type="text" id="title" placeholder="place your title here..." />
+        <div>
+          <label for="title">Title</label>
+          <input type="text" id="title" placeholder="place your title here..." />
+        </div>
   
-        <label for="introduction">Introduction</label>
-        <input type="text" id="introduction" placeholder="type a short introduction here...">
+        <div>
+          <label for="introduction">Introduction</label>
+          <input type="text" id="introduction" placeholder="type a short introduction here...">
+        </div>
   
-        <label for="thumbnail">Add Your Thumbnail</label>
-        <input type="file">
-  
-        <label for="yourPost">Your Post</label>
-        <input type="text" id="yourPost" placeholder="start typing...">
+        <div>
+          <label for="thumbnail">Add Your Thumbnail</label>
+          <input type="file">
+        </div>
+
+        <div>
+          <label for="yourPost">Your Post</label>
+          <input type="text" id="yourPost" placeholder="start typing...">
+        </div>
   
         <div class="button-container">
           <NuxtLink to="/" class="tertiary-button">cancel</NuxtLink>
@@ -49,6 +57,7 @@ form input{
   margin-top: 0.5rem;
   border: 2px solid var(--font-color);
   border-radius: 15px;
+  background-color: var(--background-color);
 }
 
 /* BUTTON CONTAINER STYLES */
@@ -58,6 +67,10 @@ form input{
     gap: 1rem;
     max-width: fit-content;
     margin-top: 2rem;
+}
+
+@media (min-width:75rem){
+  
 }
 </style>
   

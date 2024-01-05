@@ -55,7 +55,7 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
           <img class="purple-separator" src="/img/separator-purple.svg" alt="Separator Purple">
         </div>
         <div class="create-blog-button">
-          <NuxtLink to="/CreateBlog">create a new blog
+          <NuxtLink to="/CreateBlog"> <p>create a new blog</p>
             <img src="/img/add-button.svg" alt="add button image">
           </NuxtLink>
         </div>
@@ -91,13 +91,15 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
   .separator-contain { grid-area: 3 / 2 / 4 / 3; }
   .create-blog-button { grid-area: 1 / 2 / 3 / 3; }
 
-  main{
+  body{
     height: 100vw;
+    overflow: hidden;
   }
 
   .blog-post{
-      width: 100%;
-      margin-top: 0;
+    position: relative;
+    width: 100%;
+    margin-top: 0;
   }
 
   .image-container{
@@ -111,13 +113,40 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
     height: 100%;
   }
 
+  .blog-post h3{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    max-width: 20rem;
+    border-radius: 20px;
+  }
+
+  .blog-date{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    border: solid 2px var(--secondary-color);
+    border-radius: 25px;
+    padding: 0.5rem;
+    min-width: 8rem;
+    list-style-type: none;
+  }
+
   .create-blog-button{
     margin-left: auto;
     margin-top: 0;
   }
 
   .separator-contain{
-    margin-left: auto;
+    padding: 2rem 0rem;
   }
 
   .separator-contain > .purple-separator{
@@ -125,22 +154,62 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
   }
 
   .button-all-posts-contain{
-    min-width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    height: 100%;
     margin: auto;
     border: solid 10px var(--secondary-color);
     border-radius: 20px;
   }
 
-  .button-all-posts-contain > .primary-button{
+  .button-all-posts-contain > a{
     border: none;
     color: var(--secondary-color);
     text-transform: uppercase;
     font-size: 5rem;
+    font-weight: 400;
     letter-spacing: -5px;
     line-height: 5rem;
     background-color: transparent;
     padding: 0;
+  }
+
+  .button-all-posts-contain > .primary-button a{
+    margin: 5rem;
+  }
+}
+
+@media (min-width:75rem){
+
+  main{
+    padding: 5rem;
+  }
+  .blog-post{
+    margin-top: -2rem
+  }
+
+  .create-blog-button{
+    width: 100%;
+    height: 100%;
+  }
+  .create-blog-button a{
+    margin: 1.5rem;
+  }
+  .create-blog-button p{
+    max-width: 13rem;
+    margin-top: -1rem;
+  }
+}
+
+@media (min-width:90rem){
+  .create-blog-button a{
+    margin: 1.5rem;
+  }
+  .create-blog-button p{
+    margin: 0;
+    max-width: 13rem;
+    font-size: 3.8rem;
+    line-height: 3.9rem;
+    letter-spacing: -3px;
   }
 
 }

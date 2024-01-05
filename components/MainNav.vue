@@ -18,15 +18,28 @@
                 <li><NuxtLink to="/">talk to me</NuxtLink></li>
                 <p>© All Rights Reserved</p>
             </ul>
+            <nuxt-link to="/">
+              <img class="logo" src="/img/iloveweb-logo.svg" alt="Logo I Love Web">
+            </nuxt-link>
         </div>
-        <nuxt-link to="/">
-          <img class="logo" src="/img/iloveweb-logo.svg" alt="Logo I Love Web">
-        </nuxt-link>
+        <div class="nav-container-responsive" >
+          <nuxt-link to="/">
+            <img class="logo-responsive" src="/img/iloveweb-logo.svg" alt="Logo I Love Web">
+          </nuxt-link>
+          <ul class="menu-items-responsive">
+            <li><NuxtLink to="/AllPosts">all posts</NuxtLink></li>
+            <li><NuxtLink to="/">talk to me</NuxtLink></li>
+          </ul>
+        </div>
     </nav>
   </header>
 </template>
 
 <style scoped>
+
+.nav-container-responsive{
+    display: none;
+  }
 
 header{
   background-color: var(--primary-color);
@@ -157,49 +170,53 @@ p{
   display: none;
 }
 
-</style>
-
-<!-- @media (min-width:50rem){
-
-  header {
-    /* background-color: aquamarine; */
-    padding: 3rem;
+@media (min-width:45rem){
+  .nav-container{
+    display: none;
   }
-
-  img{
-    max-width: 7rem;
-    margin-right: 4rem;
-  }
-
-  nav{
+  .nav-container-responsive{
     display: flex;
   }
 
-  .nav-links{
+  .logo-responsive{
+    max-width: 8rem;
+    margin: 3rem 4rem 0rem 3rem;
+  }
+
+  .menu-items-responsive{
     display: flex;
     gap: 3rem;
     list-style-type: none;
-    align-items: flex-end;
     gap: 4rem;
+    align-items: flex-end;
   }
 
-  a{
+  .menu-items-responsive a{
+    font-size: 1.3rem;
     font-style: italic;
     font-weight: 300;
+    letter-spacing: -1px;
     color: var(--font-color);
     text-decoration: none;
   }
 
-  a:hover{
+  .menu-items-responsive a:hover{
     font-style: italic;
     font-weight: bold;
     color: var(--secondary-color);
   }
 
-  a:active{
+  .menu-items-responsive a:active{
     font-style: italic;
     font-weight: bold;
     color: var(--secondary-color);
   }
+}
 
-} -->
+@media (min-width:75rem){
+  .logo-responsive{
+    margin-left: 5rem;
+  }
+}
+
+</style>
