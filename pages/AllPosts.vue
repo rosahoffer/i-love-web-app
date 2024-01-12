@@ -34,7 +34,7 @@ console.log(blogs); // Controleer of blogs correct worden opgehaald
 </script>
 
 <template>
-    <main>
+    <main class="fade-in-left">
         <div class="heading-title-contain">
             <h2>All Posts<span class="sub-title">fdnd</span></h2>
             <img class="purple-separator" src="/img/separator-purple.svg" alt="Separator Purple">
@@ -78,20 +78,38 @@ console.log(blogs); // Controleer of blogs correct worden opgehaald
     margin: 3rem 0rem;
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 40rem) {
+    .blog-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .image-container{
+        width: 100%;
+    }
+
+    .image-container img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (min-width: 75rem) {
 
     .blog-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; /* Drie kolommen */
-        gap: 20px; /* Ruimte tussen de blogposts */
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
     }
 
     .main-blog {
-        grid-column: span 2; /* De eerste blogpost neemt twee kolommen in beslag */
+        grid-column: span 2;
     }
 
     .small-blog {
-        grid-column: span 1; /* De overige blogposts nemen één kolom in beslag */
+        grid-column: span 1;
     }
 
     .main-blog {

@@ -27,7 +27,7 @@ const blog = data.value.data.blog
 </script>
 
 <template>
-  <main class="contain-detail-page">
+  <main class="contain-detail-page fade-in-left">
     <div>
       <h2>{{ blog.title }}<span class="sub-title">fdnd</span></h2>
     </div>

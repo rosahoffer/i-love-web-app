@@ -5,6 +5,10 @@ export default {
   alias: {
     '@': resolve(__dirname, "/"),
   },
+
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
   
   css: [
     'assets/css/global.css'

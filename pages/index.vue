@@ -35,11 +35,11 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
 <template>
   <main>
     <section class="grid-contain">
-      <div class="heading-title-contain">
+      <div class="heading-title-contain fade-in-left">
         <h1>Best Of This Week<span class="sub-title">fdnd</span></h1>
         <img class="purple-separator" src="/img/separator-purple.svg" alt="Separator Purple">
       </div> 
-        <article class="blog-post" v-if="blogs && blogs.length > 0">
+        <article class="blog-post fade-in-left" v-if="blogs && blogs.length > 0">
           <div class="image-container">
             <NuxtLink :to="`${blogs[0].slug}`">
               <img v-if="blogs[0].thumbnail" :src="blogs[0].thumbnail.url" alt="Image Design System">
@@ -48,13 +48,13 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
             <h3>{{ blogs[0].title }}</h3>
             <li class="blog-date">{{ blogs[0].date }}</li>
         </article>
-        <div class="button-all-posts-contain">
+        <div class="button-all-posts-contain fade-in-right">
           <NuxtLink class="primary-button" to="/AllPosts">see more posts</NuxtLink>
         </div>
-        <div class="separator-contain">
+        <div class="separator-contain fade-in-right">
           <img class="purple-separator" src="/img/separator-purple.svg" alt="Separator Purple">
         </div>
-        <div class="create-blog-button">
+        <div class="create-blog-button fade-in-right">
           <NuxtLink to="/CreateBlog"> <p>create a new blog</p>
             <img src="/img/add-button.svg" alt="add button image">
           </NuxtLink>
@@ -202,16 +202,18 @@ console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgeh
 
 @media (min-width:90rem){
   .create-blog-button a{
-    margin: 1.5rem;
+    /* padding: 3rem; */
+    margin: 1rem;
   }
   .create-blog-button p{
     margin: 0;
     max-width: 13rem;
-    font-size: 3.8rem;
-    line-height: 3.9rem;
+    font-size: 4.3rem;
+    line-height: 4.5rem;
     letter-spacing: -3px;
   }
 
 }
+
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="fade-in-left">
       <div class="heading-title-contain">
         <h2>Create A New Blog<span class="sub-title">fdnd</span></h2>
       </div>

@@ -137,6 +137,40 @@ p{
     text-decoration-line: underline;
 }
 
+/* ANIMATIES */
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-left {
+    opacity: 0;
+    animation: fadeInLeft 0.8s ease-in-out forwards;
+  }
+  
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-right {
+    opacity: 0;
+    animation: fadeInRight 0.8s ease-in-out forwards;
+  }
+
 /* CREATE BLOG BUTTON  */
 
 .create-blog-button{
@@ -215,6 +249,11 @@ main{
     height: 20rem;
     object-fit: cover;
 }
+
+.image-container img:hover{
+    transition: ease-in 0.3s;
+    transform: scale(1.2);
+  }
 
 
 /* BREAKPOINTS */
