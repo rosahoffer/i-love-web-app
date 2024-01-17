@@ -42,6 +42,8 @@ Dit gedeelte wordt binnenkort bijgewerkt met informatie over hoe je de blogwebsi
 - [Nuxt Documentatie](https://nuxt.com/docs/getting-started/installation)
 - [Hygraph Documentatie](https://hygraph.com/docs)
 
+Wil je meer inzicht krijgen in de ontwikkelingslevenscyclus van mijn blogwebsite? Neem dan een kijkje op [deze link](https://github.com/rosahoffer/i-love-web-app/wiki/DLC) voor een gedetailleerd overzicht. Hier vind je informatie over de technologische keuzes, het ontwikkelproces en andere relevante details die hebben bijgedragen aan het succes van mijn blog.
+
 ## 🔓 Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
