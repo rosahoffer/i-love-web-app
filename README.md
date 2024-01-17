@@ -1,75 +1,49 @@
-# Nuxt 3 Minimal Starter
+# Mijn Blogwebsite - I Love Web
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 📖 Inhoudsopgave
 
-## Setup
+  * [Beschrijving](#beschrijving)
+  * [Gebruik](#gebruik)
+  * [Kenmerken](#kenmerken)
+  * [Installatie](#installatie)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
+    
+## 📄 Beschrijving
 
-Make sure to install the dependencies:
+Welkom op mijn blog, een platform gewijd aan het bijhouden van internationale ontwikkelingen op het gebied van frontend development en design. Dit is een plek waar ik mijn passie voor innovatie deel en een bron wil bieden voor degenen die betrokken zijn bij deze fascinerende vakgebieden.
 
-```bash
-# npm
-npm install
+## 🛠️ Gebruik
 
-# pnpm
-pnpm install
+Dit gedeelte wordt binnenkort bijgewerkt met informatie over hoe je de blogwebsite kunt gebruiken en navigeren.
 
-# yarn
-yarn install
+## 💎 Kenmerken
 
-# bun
-bun install
-```
+**Tools**
 
-## Development Server
+- 🖥️ VSCode
+- 🎨 Figma
 
-Start the development server on `http://localhost:3000`:
+**Methodes en Technieken**
 
-```bash
-# npm
-npm run dev
+- 🚀 Nuxt
+- 🗳️ Hygraph
+- 💅🏼 CSS
 
-# pnpm
-pnpm run dev
+## 📥 Installatie
 
-# yarn
-yarn dev
+1. Clone of download deze repository.
+2. Ga naar de root directory van het project.
+3. Gebruik `npm install` om de gebruikte dev dependencies en packages te installeren.
+4. Gebruik `npm run dev` om de web-server te starten. Deze is standaard bereikbaar op poort `5173`.
 
-# bun
-bun run dev
-```
+## 🗂️ Bronnen
 
-## Production
+- [Nuxt Documentatie](https://nuxt.com/docs/getting-started/installation)
+- [Hygraph Documentatie](https://hygraph.com/docs)
 
-Build the application for production:
+## 🔓 Licentie
 
-```bash
-# npm
-npm run build
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This work is licensed under [GNU GPLv3](./LICENSE).
