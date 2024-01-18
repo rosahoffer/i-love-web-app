@@ -1,5 +1,7 @@
 # Mijn Blogwebsite - I Love Web
 
+![new-i-love-web-tablet_laptop_and_smartphone_mockup](https://github.com/rosahoffer/i-love-web-app/assets/112861375/1bb15215-e92c-4816-b52a-88788ecbc317)
+
 ## 📖 Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
