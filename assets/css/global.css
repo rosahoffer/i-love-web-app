@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    cursor: url("/img/cursor-iloveweb.svg"), auto ;
+    /* cursor: url("/img/cursor-iloveweb.svg"), auto ; */
 }
     
 
@@ -112,6 +112,8 @@ p{
     border-radius: 25px;
     padding: 0.6rem 0.5rem;
     min-width: 8rem;
+    cursor: pointer;
+
 }  
 
 .tertiary-button{
@@ -250,10 +252,11 @@ main{
     width: 20rem;
     height: 20rem;
     object-fit: cover;
+    transition: 0.3s ease-out;
 }
 
 .image-container img:hover{
-    transition: ease-in 0.3s;
+    transition: 0.3s ease-in;
     transform: scale(1.2);
   }
 
@@ -323,3 +326,21 @@ main{
         line-height: 5rem;
     }
 }
+
+/* Algemeen stijlen voor code blocks */
+pre {
+    background-color: var(--font-color);
+    color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    overflow: auto;
+    margin: 1rem 0;
+  }
+  
+  code {
+    background-color: transparent;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+  
+  

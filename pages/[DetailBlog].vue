@@ -1,4 +1,7 @@
 <script setup>
+import ContactForm from '../components/ContactForm.vue';
+import Reactions from '../components/Reactions.vue';
+
 const route = useRoute()
 const params = route.params.DetailBlog
 
@@ -40,5 +43,15 @@ const blog = data.value.data.blog
       <div v-html="blog.description.html"></div>
     </div>
     <NuxtLink class="primary-button" to="/">back to overview</NuxtLink>
+    <div>
+      <ContactForm />
+      <Reactions />
+    </div>
   </main>
 </template>
+
+<style>
+h3{
+  margin: 2rem 0;
+}
+</style>

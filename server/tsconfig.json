@@ -1,6 +1,6 @@
 {
   "extends": "../.nuxt/tsconfig.server.json",
   "compilerOptions": {
-    "types": ["@nuxt/types"]
+    "types": ["@nuxt/types",]
   },
 }
