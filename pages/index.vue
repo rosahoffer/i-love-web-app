@@ -28,8 +28,12 @@
             },
         })
 
-const blogs = await data.value.data.blogs
-console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgehaald
+let blogs = await data.value.data.blogs
+
+// Sorteer de blogs op basis van de 'publishedAt' datum in aflopende volgorde
+blogs.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+
+console.log("Parsed blogs:", blogs); // Controleer of blogs correct worden opgehaald en gesorteerd
 </script>
 
 <template>
